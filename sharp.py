@@ -127,10 +127,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
     username = update.message.from_user.username
     if user_id not in users:
-        await update.message.reply_text("❌ You don't have an active subscription. Please contact the admin for assistance.Buy Form @SharpX72", reply_markup=main_menu_keyboard())
+        await update.message.reply_text("❌ You don't have an active subscription. Please contact the admin for assistance.Buy Form @Rishi747", reply_markup=main_menu_keyboard())
     else:
         expiration_date = users[user_id]
-        await update.message.reply_text(f"👋 Welcome {username}!\n Your subscription is active until {expiration_date}.\n This Tool is provided by @SharpX72", reply_markup=main_menu_keyboard())
+        await update.message.reply_text(f"👋 Welcome {username}!\n Your subscription is active until {expiration_date}.\n This Tool is provided by @Rishi747", reply_markup=main_menu_keyboard())
 
 async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
@@ -278,7 +278,7 @@ async def genkey(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         else:
             response = "Usage: /genkey <amount> <hours/days>"
     else:
-        response = "ONLY OWNER CAN USE💀OWNER @SharpX72"
+        response = "ONLY OWNER CAN USE💀OWNER @Rishi747"
 
     await update.message.reply_text(response)
 
@@ -300,7 +300,7 @@ async def redeem(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             save_keys()
             response = f"✅Key redeemed successfully!"
         else:
-            response = "Invalid or expired key buy from @SharpX72."
+            response = "Invalid or expired key buy from @Rishi747."
     else:
         response = "Usage: /redeem <key>"
 
